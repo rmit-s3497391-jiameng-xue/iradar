@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF8" content="width=device-width", initial-scale=1>
+        <title>EditSpecial</title>
+        <link rel="stylesheet" href="css/BootStrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/BootStrap/bootstrap.css">
+        <link href="css/iRadarCss/editspecial.css" type="text/css" rel="stylesheet"/> 
+        <link href="css/iRadarCss/common.css" type="text/css" rel="stylesheet"/>
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+        <link rel="stylesheet" href="css/BootStrap/bootstrap-multiselect.css" type="text/css">
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+    </head>
+    
+    <body>
+        <div class="container-fluid">
+            <div class="container">
+                
+<!--header of homepage-->
+                <div class="row">
+                        <div class="col-md-5">
+                        <div class="customDiv logo">
+                        <a href="home.html"><img src="img/iRadarLogo320.png" alt="iRadarLogo" class="img-responsive"></a>
+                        </div>
+                    </div>
+            
+<!--Menu in the homepage header-->
+                    <div class="col-md-6">
+                     <div class="icon-bar customDiv">
+                        <a class="active" href="home.html"><i class="fa fa-home"></i></a> 
+                        <a href="editspecial.html"><i class="fa fa-edit"></i></a> 
+                        <a href="#"><i class="fa fa-bluetooth"></i></a>
+                        <a href="#"><i class="fa fa-download"></i></a> 
+                         <a href="#"><i class="fa fa-user"></i></a> 
+                        <a href="#"><i class="fa fa-sign-out"></i></a> 
+                         
+                        </div>
+                    </div>
+                    
+                
+                    <div class="col-md-1" style="background:url() no-repeat; background-color:#555;width: 95px; height:50px;overflow:hidden; margin-top:50px; font-size:18px;">
+                    <a href="#" style="color:#283593;">
+                   <select class="selection form-control">
+                    <option><a href="#">Admin</a></option>
+                    <option><a href="#">Venues</a></option>
+                    <option><a href="#">System Properties</a></option>
+                    <option><a href="#">System Log</a></option>
+                    <option><a href="#">Create New User</a></option> 
+                    </select>
+                    </a>
+                    </div>
+                    
+                </div>
+   <!--end of header-->
+                
+ <!--Main content in "edit special" page-->
+             <div class="row mainBackground">   
+                <div class="row form-page rowPadding">
+                    <div class="col-md-2"></div>
+                    <form class="form-horizontal">
+                        <div class="from-group">
+                        <label class="col-md-3 control-label">Subject:</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control">
+                            </div>
+                        </div>   
+                        </form>
+                     <div class="col-md-3"></div>
+                        
+                    </div>
+                 
+   <!--Date picker for record when this special is released-->              
+                    <div class="row form-page rowPadding">
+                    <div class="col-md-2"></div>
+                    <form class="form-horizontal">
+                        <div class="from-group field-box">
+                        <label class="col-md-3 control-label">Release Date:</label>
+                        <div class="col-md-4">
+                            <input type="text"  placeholder="MM/DD/YYY"class="form-control input-datepicker" id="date" name="date">
+                            </div>
+                        </div>   
+                        </form>
+                     <div class="col-md-3"></div>
+                        
+                    </div>
+                 
+  <!--Upload media file for the special-->               
+                 <div class="row form-page rowPadding">
+                    <div class="col-md-2"></div>
+                    <form class="form-horizontal">
+                        <div class="from-group field-box">
+                            <label class="col-md-3 control-label">Upload File:
+                            </label>
+                        <div class="col-md-4">
+                            <input type="file" class=" filestyle" id="uploadFile" name="uploadFile" data-buttonName="btn-primary">
+                            <u style="font-style:italic; color:aqua; font-size:15px;text-align: left;">Please upload file in JPG, PNG, MP3 or MP4 format.</u>
+                            </div>
+                        </div>   
+                        </form>
+                     <div class="col-md-3"></div>
+                        
+                    </div>   
+    
+<!-- Select mutiple beacons(not the devices but the accessed information of the beacons) for releasing the special-->
+                 <div class="row form-page rowPadding">
+                    <div class="col-md-2"></div>
+                    <form class="form-horizontal">
+                        <div class="from-group field-box">
+                        <label class="col-md-3 control-label">Release Beacons:</label>
+                        <div class="col-md-4" style="width:100px;">
+                    <select id="beacons-dropUp" multiple="multiple">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option data-role="divider"></option>
+                <option value="4">Option 4</option>
+                <option value="5">Option 5</option>
+                <option value="6">Option 6</option>
+                            </select>
+                            </div>
+                        </div>   
+                        </form>
+                     <div class="col-md-3"></div>
+                        
+                    </div>
+                 
+                 
+                 
+   <!--add description to the special-->              
+                <div class="row form-page rowPadding">
+                    <div class="col-md-2"></div>
+                    <form class="form-horizontal">
+                        <div class="from-group">
+                        <label class="col-md-3 control-label">Description:</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control description">
+                            </div>
+                        </div>   
+                        </form>
+                     <div class="col-md-3"></div>
+                        
+                    </div>                              
+       </div>
+<!--end of form-->
+                
+                
+     </div>
+ </div>
+                               
+
+<!--script of this page-->
+        
+<!--  jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Bootstrap Date-Picker Plugin -->
+<script type="text/javascript" src="/js/bootstrap.datepicker.js"></script>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/bootstrap-filestyle.min.js"></script>
+
+<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+
+
+<!--function for date picker-->
+<script>
+    $(document).ready(function(){
+        var date_input=$('input[name="date"]');
+        var container=$('.bootstrap-iso form').length>0? $('.bootstrap-iso form').parent() : "body";
+        var options={
+            format:'mm/dd/yyyy',
+            container:container,
+            todayHighlight:true,
+            autoclose:true,
+            
+        };
+        date_input.datepicker(options);
+    })
+    
+    $(":file").filestyle({buttonName:"btn-primary"});
+        
+</script>
+
+<!--function for mutiple beacons selection-->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#beacons-dropUp').multiselect({
+            enableFiltering: true,
+            includeSelectAllOption: true,
+            maxHeight: 400,
+            dropUp: true
+        });
+    });
+</script>
+
+    
+ </body>
+    
+</html>

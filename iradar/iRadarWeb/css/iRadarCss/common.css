@@ -1,0 +1,67 @@
+.customNav{
+    margin-top: 45px;
+    font-size: 25px; /*Common style for the navigation in top of the website*/
+}
+
+.customDiv{
+  height: 50px;
+    margin-top: 50px;
+    font-size: 25px;
+    padding-bottom: 10px; /*Common style for every pages*/
+}
+
+.mainBackground{
+    background-color: #3f98d4;
+    height: 800px;
+    padding-top: 150px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-top: 1px; /* Common background style for every pages*/ 
+}
+
+.logo{
+    margin-top: 20px;
+    
+}
+
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #555; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 16.5%; /* Equal width (5 icons with 16.5% width each = 100%)
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+    background-color: #283593; /* Add a hover color */
+}
+
+.active {
+    background-color:aqua; /* #4CAF50Add an active/current color */
+}
+
+.a-white{
+    color:white; 
+}
+
+.selection{
+    background: transparent;
+    border: none;
+    color: aqua;
+    width: 120px;
+    height: 100%;   /*define the style in the drop-down menu in the top bar menu*/
+    
+}
+div div a:hover{
+    color:aqua;
+}
+
